@@ -1,0 +1,17 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<header class="heading">
+    <h1> Text Classifier </h1>
+</header>
+
+<form action="predict" method="post">
+    {% csrf_token %}
+<textarea class="entry" rows="10" cols="80" name="textentry"> Enter Text Here </textarea>
+<input type="submit" class="btn"> 
+</form>
+
+{% endblock %}
+
+
+
