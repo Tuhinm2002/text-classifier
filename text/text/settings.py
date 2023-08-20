@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 file=open("important_key.txt","r")
 reading=file.read()
-SECRET_KEY = reading
+SECRET_KEY = 'django-insecure-^ab3di&6f-a=deha$)+-x*8uiu=0b@n3bu&rx7jwc(3q8qx@r-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
